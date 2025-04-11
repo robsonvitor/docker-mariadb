@@ -1,0 +1,15 @@
+[Unit]
+Description=Docker MariaDB
+After=docker.service
+Requires=docker.service
+
+[Service]
+WorkingDirectory=/opt/docker-mariadb
+Type=oneshot
+RemainAfterExit=yes
+StandardOutput=syslog
+ExecStart=/bin/bash -c "docker compose -f /opt/docker-mariadb/docker-compose.yaml up -d"
+ExecStop=/bin/bash -c "docker compose -f /opt/docker-mariadb/docker-compose.yaml stop"
+
+[Install]
+WantedBy=multi-user.target
