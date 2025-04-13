@@ -15,13 +15,13 @@ git clone git@github.com:robsonvitor/docker-mariadb.git
 cd /opt/docker/docker-mariadb
 ```
 
+
 #### Copie o arquivo env-example para .env
 ```bash 
 cp env-example .env
 ```
-
+> [!IMPORTANT]  
 > Ajuste as variáveis no arquivo .env conforme seu ambiente
-
 > Ajuste a configuração do arquivo conf/my.cnf para seu ambiente
 
 ## Configurações extras
@@ -70,6 +70,8 @@ cdd6a8057a6a   mariadb:11.3                      "docker-entrypoint.s…"   2 da
 > CUIDADO: Todos os dados do MariaDB serão gravados no diretório ```dados```
 
 ***
+> [!NOTE]  
+> Caso julgue necessário limitar recursos do container, ajuste conforme necessidade.
 
 ## Limitação de recursos para o container
 ```YAML
