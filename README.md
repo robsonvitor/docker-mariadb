@@ -21,7 +21,6 @@ cd /opt/docker/docker-mariadb
 cp env-example .env
 ```
 > [!IMPORTANT]  
-
 > Ajuste as variáveis no arquivo .env conforme seu ambiente
 
 > Ajuste a configuração do arquivo conf/my.cnf para seu ambiente
