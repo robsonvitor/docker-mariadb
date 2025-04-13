@@ -67,9 +67,11 @@ cdd6a8057a6a   mariadb:11.3                      "docker-entrypoint.s…"   2 da
 
 
 > [!WARNING]  
-> Todos dados do MariaDB serão gravados no diretório ```dados```
+> CUIDADO: Todos os dados do MariaDB serão gravados no diretório ```dados```
 
-### Limitação de recursos para o container
+***
+
+## Limitação de recursos para o container
 ```YAML
 services:
   mariadb:
@@ -81,7 +83,9 @@ services:
 
 ```
 
-### Otimização do Sistema Operacional Host
+***
+
+## Otimização do Sistema Operacional Host
 
 Algumas otimizações importantes para o Sistema Operacional em que os containers estão sendo executados
 
