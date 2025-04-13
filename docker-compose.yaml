@@ -9,7 +9,7 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - ./dados_mariadb:/var/lib/mysql
+      - ./dados:/var/lib/mysql
       - ./conf/my.cnf:/etc/mysql/my.cnf:ro
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
